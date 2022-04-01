@@ -20,7 +20,6 @@ class _altemizState extends State<altemiz> {
               crossAxisAlignment: CrossAxisAlignment.center,children:[ Text(
                   "قرارات التمييز",
                   style: TextStyle(
-                    //fontStyle: FontStyle.italic,
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
                     fontSize: 20,
@@ -36,7 +35,6 @@ class _altemizState extends State<altemiz> {
         height: 10,
       ),Container(
       padding: const EdgeInsets.all(10),
-      //color: Colors.black45,
       height: 50,
       width: 450,
       child: ElevatedButton(
@@ -50,18 +48,15 @@ class _altemizState extends State<altemiz> {
           ),
         ),
         child: Text("قرارات التمييز-مرافعات",style:TextStyle(
-          //fontStyle: FontStyle.italic,
           color: Colors.black,
           fontWeight: FontWeight.w500,
           fontSize: 18,
-          //fontFamily: 'Pacifico(1)'),
         ), ),
 
       ),
     ), SizedBox(height: 5,),
       Container(
         padding: const EdgeInsets.all(10),
-        //color: Colors.black45,
         height: 50,
         width: 450,
         child: ElevatedButton(
@@ -75,18 +70,14 @@ class _altemizState extends State<altemiz> {
             ),
           ),
           child: Text("  قرارات التمييز-جزائي ",style:TextStyle(
-            //fontStyle: FontStyle.italic,
             color: Colors.black,
             fontWeight: FontWeight.w500,
             fontSize: 18,
-            //fontFamily: 'Pacifico(1)'),
           ), ),
-
         ),
       ), SizedBox(height: 5,),
       Container(
         padding: const EdgeInsets.all(10),
-        //color: Colors.black45,
         height: 50,
         width: 450,
         child: ElevatedButton(
@@ -100,13 +91,11 @@ class _altemizState extends State<altemiz> {
             ),
           ),
           child: Text("قرارات التمييز-جنائي",style:TextStyle(
-            //fontStyle: FontStyle.italic,
             color: Colors.black,
             fontWeight: FontWeight.w500,
             fontSize: 18,
-            //fontFamily: 'Pacifico(1)'),
-          ), ),
 
+          ), ),
         ),
       ), SizedBox(height: 5,),
       Container(
@@ -136,7 +125,7 @@ class _altemizState extends State<altemiz> {
       ), SizedBox(height: 5,),
       Container(
         padding: const EdgeInsets.all(10),
-        //color: Colors.black45,
+
         height: 50,
         width: 450,
         child: ElevatedButton(
@@ -154,7 +143,6 @@ class _altemizState extends State<altemiz> {
             color: Colors.black,
             fontWeight: FontWeight.w500,
             fontSize: 18,
-            //fontFamily: 'Pacifico(1)'),
           ), ),
 
         ),
@@ -180,13 +168,11 @@ class _altemizState extends State<altemiz> {
             color: Colors.black,
             fontWeight: FontWeight.w500,
             fontSize: 18,
-            //fontFamily: 'Pacifico(1)'),
           ), ),
 
         ),
       ),  SizedBox(height: 5,),Container(
         padding: const EdgeInsets.all(10),
-        //color: Colors.black45,
         height: 50,
         width: 450,
         child: ElevatedButton(
@@ -204,13 +190,11 @@ class _altemizState extends State<altemiz> {
             color: Colors.black,
             fontWeight: FontWeight.w500,
             fontSize: 18,
-            //fontFamily: 'Pacifico(1)'),
           ), ),
 
         ),
       ),  SizedBox(height: 5,),Container(
         padding: const EdgeInsets.all(10),
-        //color: Colors.black45,
         height: 50,
         width: 450,
         child: ElevatedButton(
@@ -224,11 +208,9 @@ class _altemizState extends State<altemiz> {
             ),
           ),
           child: Text("قرارات التمييز-اثبات",style:TextStyle(
-            //fontStyle: FontStyle.italic,
             color: Colors.black,
             fontWeight: FontWeight.w500,
             fontSize: 18,
-            //fontFamily: 'Pacifico(1)'),
           ), ),
 
         ),
@@ -252,13 +234,11 @@ class _altemizState extends State<altemiz> {
             color: Colors.black,
             fontWeight: FontWeight.w500,
             fontSize: 18,
-            //fontFamily: 'Pacifico(1)'),
           ), ),
 
         ),
       ),   SizedBox(height: 5,),Container(
         padding: const EdgeInsets.all(10),
-        //color: Colors.black45,
         height: 50,
         width: 450,
         child: ElevatedButton(
@@ -276,7 +256,7 @@ class _altemizState extends State<altemiz> {
             color: Colors.black,
             fontWeight: FontWeight.w500,
             fontSize: 18,
-            //fontFamily: 'Pacifico(1)'),
+
           ), ),
 
         ),
@@ -300,7 +280,6 @@ class _altemizState extends State<altemiz> {
             color: Colors.black,
             fontWeight: FontWeight.w500,
             fontSize: 18,
-            //fontFamily: 'Pacifico(1)'),
           ), ),
 
         ),

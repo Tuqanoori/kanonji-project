@@ -23,7 +23,7 @@ class _althoraState extends State<althora> {
                     crossAxisAlignment: CrossAxisAlignment.center,children:[ Text(
                         "قرارات مجلس قيادة الثورةالمنحل",
                         style: TextStyle(
-                          //fontStyle: FontStyle.italic,
+
                           color: Colors.white,
                           fontWeight: FontWeight.w500,
                           fontSize: 20,
@@ -46,7 +46,6 @@ class _althoraState extends State<althora> {
                 borderRadius: BorderRadius.circular(10),
                 child: Container(
                     width: 450,
-                    // padding: const EdgeInsets.all(50),
                     color: Colors.white10,
                     child: TextField(
                       // obscureText: true,
@@ -65,7 +64,6 @@ class _althoraState extends State<althora> {
                             color: Colors.black12,
                             fontSize: 18,
 
-                            //fontStyle: FontStyle.italic,
                           ), focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.blue),
                         ),  )))),SizedBox(
@@ -75,7 +73,6 @@ class _althoraState extends State<althora> {
                 child: Container(
 
                     width: 450,
-                    // padding: const EdgeInsets.all(50),
                     color: Colors.white10,
                     child: TextField(
                       // obscureText: true,
@@ -93,14 +90,11 @@ class _althoraState extends State<althora> {
                           labelStyle: TextStyle(
                             color: Colors.black12,
                             fontSize: 18,
-
-                            //fontStyle: FontStyle.italic,
                           ), focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.blue),
                         ),  )))),SizedBox(
               height: 10,
             ),Container(
-              //color: Colors.black45,
                 height: 40,
                 width:450,
                 child: ElevatedButton(
@@ -109,9 +103,8 @@ class _althoraState extends State<althora> {
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
                     fontSize: 15,
-                    //fontFamily: 'Pacifico(1)'),
+
                   ),),
-                  // textColor: Colors.white,
                   // 2
                   style: ElevatedButton.styleFrom(
                     primary: _hasBeenPressed ? Colors.white60 : Colors.blueAccent,
@@ -120,8 +113,6 @@ class _althoraState extends State<althora> {
                     shape: new RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(25.0),
                     ),
-
-                    // 3
                   ),
                   onPressed: () => {
                     setState(() {
@@ -133,7 +124,6 @@ class _althoraState extends State<althora> {
               height: 10,
             ),
             Container(
-              //color: Colors.black45,
                 height:70,
                 width:450,
                 child: ElevatedButton(
@@ -142,7 +132,6 @@ class _althoraState extends State<althora> {
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
                     fontSize: 15,
-                    //fontFamily: 'Pacifico(1)'),
                   ),),
                   // textColor: Colors.white,
                   // 2

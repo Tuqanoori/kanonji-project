@@ -3,6 +3,10 @@ import 'package:kanongi/searchhome.dart';
 
 import 'comp search.dart';
 import 'dostor.dart';
+import 'dostorserch.dart';
+import 'madanisearch.dart';
+import 'morafaat.dart';
+import 'okobatsearch.dart';
 
 class homepage extends StatefulWidget {
   const homepage({Key? key}) : super(key: key);
@@ -31,7 +35,6 @@ class _homepageState extends State<homepage> {
                 borderRadius: BorderRadius.circular(10),
                 child: Container(
                     width: 450,
-                    //padding: const EdgeInsets.all(50),
                     color: Colors.white10,
                     child: TextField(
                       decoration: InputDecoration(
@@ -42,7 +45,6 @@ class _homepageState extends State<homepage> {
                             onPressed: () {
                               Navigator.of(context)
                                   .push(MaterialPageRoute(builder: (_) =>  searchhome ()));
-                              /* Clear the search field */
                             },
                           ),
                           hintText: 'Search...',
@@ -53,7 +55,6 @@ class _homepageState extends State<homepage> {
                 )),  SizedBox(height: 10,),
             Container(
               padding: const EdgeInsets.all(10),
-              //color: Colors.black45,
               height: 120,
               width: 450,
               child: ElevatedButton(
@@ -70,19 +71,15 @@ class _homepageState extends State<homepage> {
                   ),
                 ),
                 child: Column(children:[Text("البحث الشامل",style:TextStyle(
-                  //fontStyle: FontStyle.italic,
                   color: Colors.red,
                   fontWeight: FontWeight.w500,
                   fontSize: 18,
                   //fontFamily: 'Pacifico(1)'),
                 ), ),Text("البحث عن كلمة او جملة في داخل كل القوانين",style:TextStyle(
-                  //fontStyle: FontStyle.italic,
                   color: Colors.black,
                   fontWeight: FontWeight.w500,
                   fontSize: 18,
-                  //fontFamily: 'Pacifico(1)'),
                 ), ),Text("او التشريعات",style:TextStyle(
-                  //fontStyle: FontStyle.italic,
                   color: Colors.black,
                   fontWeight: FontWeight.w500,
                   fontSize: 18,
@@ -97,7 +94,7 @@ class _homepageState extends State<homepage> {
     width: 450,
     child: ElevatedButton(
     onPressed: () {Navigator.of(context)
-        .push(MaterialPageRoute(builder: (_) => dostor
+        .push(MaterialPageRoute(builder: (_) => destorpage
       ()));},
     style: ElevatedButton.styleFrom(
     primary: Colors.white,
@@ -108,23 +105,18 @@ class _homepageState extends State<homepage> {
     ),
     ),
     child: Text("الدستور",style:TextStyle(
-    //fontStyle: FontStyle.italic,
     color: Colors.black,
     fontWeight: FontWeight.w500,
     fontSize: 18,
-    //fontFamily: 'Pacifico(1)'),
-    ), ),
-
-        ),
+    ), ),),
     ), SizedBox(height: 5,),
             Container(
               padding: const EdgeInsets.all(10),
-              //color: Colors.black45,
               height: 50,
               width: 450,
               child: ElevatedButton(
                 onPressed: () {Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (_) =>  searchhome ()));},
+                    .push(MaterialPageRoute(builder: (_) =>  madinisearch()));},
                 style: ElevatedButton.styleFrom(
                   primary: Colors.white,
                   side: BorderSide(color: Colors.blue, width: 1),
@@ -134,22 +126,20 @@ class _homepageState extends State<homepage> {
                   ),
                 ),
                 child: Text("القانون المدني  العراقي رقم40 لسنة1951",style:TextStyle(
-                  //fontStyle: FontStyle.italic,
                   color: Colors.black,
                   fontWeight: FontWeight.w500,
                   fontSize: 18,
-                  //fontFamily: 'Pacifico(1)'),
                 ), ),
 
               ),
             ), SizedBox(height: 5,),
             Container(
               padding: const EdgeInsets.all(10),
-              //color: Colors.black45,
               height: 50,
               width: 450,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {Navigator.of(context)
+        .push(MaterialPageRoute(builder: (_) =>  okobatsearch()));},
                 style: ElevatedButton.styleFrom(
                   primary: Colors.white,
                   side: BorderSide(color: Colors.blue, width: 1),
@@ -158,23 +148,20 @@ class _homepageState extends State<homepage> {
                     borderRadius: new BorderRadius.circular(10.0),
                   ),
                 ),
-                child: Text("قانون العقوبات",style:TextStyle(
-                  //fontStyle: FontStyle.italic,
+                child: Text("قانون العقوبات رقم (111)لسنة 1969",style:TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w500,
                   fontSize: 18,
-                  //fontFamily: 'Pacifico(1)'),
                 ), ),
-
               ),
             ), SizedBox(height: 5,),
             Container(
               padding: const EdgeInsets.all(10),
-              //color: Colors.black45,
               height: 50,
               width: 450,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => morafaaat()));},
                 style: ElevatedButton.styleFrom(
                   primary: Colors.white,
                   side: BorderSide(color: Colors.blue, width: 1),
@@ -188,14 +175,11 @@ class _homepageState extends State<homepage> {
                   color: Colors.black,
                   fontWeight: FontWeight.w500,
                   fontSize: 18,
-                  //fontFamily: 'Pacifico(1)'),
                 ), ),
-
               ),
             ), SizedBox(height: 5,),
             Container(
               padding: const EdgeInsets.all(10),
-              //color: Colors.black45,
               height: 50,
               width: 450,
               child: ElevatedButton(
@@ -213,15 +197,12 @@ class _homepageState extends State<homepage> {
                   color: Colors.black,
                   fontWeight: FontWeight.w500,
                   fontSize: 18,
-                  //fontFamily: 'Pacifico(1)'),
                 ), ),
-
               ),
             ),
             SizedBox(height: 5,),
             Container(
               padding: const EdgeInsets.all(10),
-              //color: Colors.black45,
               height: 50,
               width: 450,
               child: ElevatedButton(
@@ -235,11 +216,11 @@ class _homepageState extends State<homepage> {
                   ),
                 ),
                 child: Text("قانون الشركات رقم (21)لسنة 1997",style:TextStyle(
-                  //fontStyle: FontStyle.italic,
+
                   color: Colors.black,
                   fontWeight: FontWeight.w500,
                   fontSize: 18,
-                  //fontFamily: 'Pacifico(1)'),
+
                 ), ),
 
               ),

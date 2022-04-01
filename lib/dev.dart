@@ -22,7 +22,6 @@ class _devState extends State<dev> {  bool _hasBeenPressed2 = false;
            width: 200,
          ),
            ), SizedBox(height: 5,),Container(
-               //color: Colors.black45,
                  height:70,
                  width:150,
                  child: ElevatedButton(
@@ -31,7 +30,6 @@ class _devState extends State<dev> {  bool _hasBeenPressed2 = false;
                      color: Colors.black,
                      fontWeight: FontWeight.w500,
                      fontSize: 15,
-                     //fontFamily: 'Pacifico(1)'),
                    ),),
                    // textColor: Colors.white,
                    // 2
@@ -68,16 +66,13 @@ class _devState extends State<dev> {  bool _hasBeenPressed2 = false;
                      color: Colors.black,
                      fontWeight: FontWeight.w500,
                      fontSize: 15,
-                     //fontFamily: 'Pacifico(1)'),
                    ),),
                    ]),Text('WhatsApp,Viber,Telegram', style:TextStyle(
-                     //fontStyle: FontStyle.italic,
                      color: Colors.black38,
                      fontWeight: FontWeight.w500,
                      fontSize: 15,
                      //fontFamily: 'Pacifico(1)'),
                    ),), SizedBox(height: 5,),]),
-                   // textColor: Colors.white,
                    // 2
                    style: ElevatedButton.styleFrom(
                      primary: _hasBeenPressed2 ? Colors.white : Colors.white,
@@ -112,21 +107,15 @@ class _devState extends State<dev> {  bool _hasBeenPressed2 = false;
                          color: Colors.black,
                          fontWeight: FontWeight.w500,
                          fontSize: 15,
-                         //fontFamily: 'Pacifico(1)'),
                        ),),
                        ]),
-                   // textColor: Colors.white,
-                   // 2
                    style: ElevatedButton.styleFrom(
                      primary: _hasBeenPressed2 ? Colors.white : Colors.white,
                      side: BorderSide(color: Colors.white60, width: 1),
                      onPrimary: Colors.white,
                      shape: new RoundedRectangleBorder(
                        borderRadius: new BorderRadius.circular(25.0),
-                     ),
-
-                     // 3
-                   ),
+                     ),),
                    onPressed: () => {
                      setState(() {
                        _hasBeenPressed2 = !_hasBeenPressed2;
@@ -143,10 +132,7 @@ class _devState extends State<dev> {  bool _hasBeenPressed2 = false;
                      color: Colors.black,
                      fontWeight: FontWeight.w500,
                      fontSize: 15,
-                     //fontFamily: 'Pacifico(1)'),
                    ),),
-                   // textColor: Colors.white,
-                   // 2
                    style: ElevatedButton.styleFrom(
                      primary: _hasBeenPressed2 ? Colors.white : Colors.white,
                      side: BorderSide(color: Colors.white60, width: 1),
@@ -154,8 +140,6 @@ class _devState extends State<dev> {  bool _hasBeenPressed2 = false;
                      shape: new RoundedRectangleBorder(
                        borderRadius: new BorderRadius.circular(25.0),
                      ),
-
-                     // 3
                    ),
                    onPressed: () => {
                      setState(() {

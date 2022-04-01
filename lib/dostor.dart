@@ -41,7 +41,7 @@ class _dostorState extends State<dostor> {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold(backgroundColor: Colors.white38,
+    return Scaffold(backgroundColor: Colors.white,
       body:   Padding(
       padding: const EdgeInsets.all(10),
       child: Column(
@@ -77,7 +77,6 @@ class _dostorState extends State<dostor> {
                 ? ListView.builder(
               itemCount: _foundUsers.length,
               itemBuilder: (context, index) => Card(
-
                 color: Colors.white,
                 shape: RoundedRectangleBorder(
                   side: BorderSide(color: Colors.blueAccent, width: 1),

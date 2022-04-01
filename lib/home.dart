@@ -67,7 +67,6 @@ class _homeState extends State<home> {
               "imags/store.jpg",
               height: 40,
               width: 40,
-              //fit: BoxFit.cover,
             )),
         SizedBox(
           height: 8,
@@ -84,7 +83,6 @@ class _homeState extends State<home> {
               "imags/newspaper.jpg",
               height: 40,
               width: 40,
-              // fit: BoxFit.cover,
             )),
         SizedBox(
           height: 8,
@@ -101,7 +99,6 @@ class _homeState extends State<home> {
               "imags/kanonji logo1.jpg",
               height: 40,
               width: 40,
-              //fit: BoxFit.cover,
             )),
        // SizedBox(
         //  height: 8,),

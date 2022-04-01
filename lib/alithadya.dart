@@ -48,7 +48,7 @@ class _alithadyaState extends State<alithadya> {
               borderRadius: BorderRadius.circular(10),
               child: Container(
                   width: 450,
-                  // padding: const EdgeInsets.all(50),
+
                   color: Colors.white10,
                   child: TextField(
                      // obscureText: true,
@@ -67,7 +67,6 @@ class _alithadyaState extends State<alithadya> {
                             color: Colors.black12,
                             fontSize: 18,
 
-                            //fontStyle: FontStyle.italic,
                           ), focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: Colors.blue),
                       ),  )))),SizedBox(
@@ -77,7 +76,6 @@ class _alithadyaState extends State<alithadya> {
               child: Container(
 
                   width: 450,
-                  // padding: const EdgeInsets.all(50),
                   color: Colors.white10,
                   child: TextField(
                     // obscureText: true,
@@ -95,8 +93,6 @@ class _alithadyaState extends State<alithadya> {
                         labelStyle: TextStyle(
                           color: Colors.black12,
                           fontSize: 18,
-
-                          //fontStyle: FontStyle.italic,
                         ), focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: Colors.blue),
                       ),  )))),SizedBox(
@@ -107,7 +103,7 @@ class _alithadyaState extends State<alithadya> {
               width:450,
               child: ElevatedButton(
                 child: new Text('عرض قرارالمحكمه الاتحادية العليا',style:TextStyle(
-                  //fontStyle: FontStyle.italic,
+
                   color: Colors.white,
                   fontWeight: FontWeight.w500,
                   fontSize: 15,
@@ -155,8 +151,6 @@ class _alithadyaState extends State<alithadya> {
                   shape: new RoundedRectangleBorder(
                     borderRadius: new BorderRadius.circular(25.0),
                   ),
-
-                  // 3
                 ),
                 onPressed: () => {
                   setState(() {

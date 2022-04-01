@@ -21,7 +21,6 @@ class _araithState extends State<araith> {
     crossAxisAlignment: CrossAxisAlignment.center,children:[ Text(
         "انشاء حساب جديد",
         style: TextStyle(
-        //fontStyle: FontStyle.italic,
         color: Colors.white,
         fontWeight: FontWeight.w500,
         fontSize: 20,
@@ -45,20 +44,16 @@ class _araithState extends State<araith> {
             color: Colors.black38,
             fontWeight: FontWeight.w500,
             fontSize: 18,
-            //fontFamily: 'Pacifico(1)'),
           ), ),  SizedBox(
           height:200,
         ),Container(
-          //color: Colors.black45,
             height:50,
             width:350,
             child: ElevatedButton(
               child: new Text(' اختيار حساب جديد', maxLines: 2, overflow: TextOverflow.ellipsis,style:TextStyle(
-                //fontStyle: FontStyle.italic,
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
                 fontSize: 15,
-                //fontFamily: 'Pacifico(1)'),
               ),),
               // textColor: Colors.white,
               // 2

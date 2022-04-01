@@ -39,7 +39,7 @@ class _searchhomeState extends State<searchhome> {
   }
   @override
   Widget build(BuildContext context) {
-    return Scaffold( backgroundColor: Colors.white38,
+    return Scaffold( backgroundColor: Colors.white,
     body:   Padding(
     padding: const EdgeInsets.all(10),
       child: Column(
@@ -52,7 +52,7 @@ class _searchhomeState extends State<searchhome> {
               fontSize: 20,
               color: Colors.white,
             )),SizedBox(
-              width:60,
+              width:40,
             ), IconButton(
               onPressed: () {  Navigator.pop(context);
               },

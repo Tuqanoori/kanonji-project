@@ -20,7 +20,6 @@ class _searchState extends State<search> {
     crossAxisAlignment: CrossAxisAlignment.center,children:[Text(
         "كل التشريعات",
         style: TextStyle(
-        //fontStyle: FontStyle.italic,
         color: Colors.white,
         fontWeight: FontWeight.w500,
         fontSize: 20,
@@ -36,7 +35,6 @@ class _searchState extends State<search> {
     height: 10,
     ),  Container(
         width:460,child:TextField(
-
         decoration: InputDecoration(
             border: OutlineInputBorder(),
             labelText: 'Search', suffixIcon: Icon(Icons.search)),
@@ -48,13 +46,11 @@ class _searchState extends State<search> {
         color: Colors.black,
         fontWeight: FontWeight.w900,
         fontSize: 18,
-        //fontFamily: 'Pacifico(1)'),
       ), ),Text("او التشريعات",style:TextStyle(
         //fontStyle: FontStyle.italic,
         color: Colors.black,
         fontWeight: FontWeight.w900,
         fontSize: 18,
-        //fontFamily: 'Pacifico(1)'),
       ), ), Container(
         child: Image.asset(
           "imags/photo_2022-03-28_05-24-47.jpg",

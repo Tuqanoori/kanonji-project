@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:kanongi/penalcode.dart';
 
-class awamer extends StatefulWidget {
-  const awamer({Key? key}) : super(key: key);
+class okobatsearch extends StatefulWidget {
+  const okobatsearch({Key? key}) : super(key: key);
 
   @override
-  _awamerState createState() => _awamerState();
+  _okobatsearchState createState() => _okobatsearchState();
 }
 
-class _awamerState extends State<awamer> {
+class _okobatsearchState extends State<okobatsearch> {
+
   bool _hasBeenPressed = false;
   bool _hasBeenPressed2 = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold( backgroundColor:Colors.white,body: SingleChildScrollView(
@@ -20,16 +23,16 @@ class _awamerState extends State<awamer> {
               color: Colors.blueAccent,
               child: Center(
                 child:Row(mainAxisAlignment: MainAxisAlignment.end,
-                    crossAxisAlignment: CrossAxisAlignment.center,children:[
-                   Text(
-                        "اوامر سلطة الائتلاف المؤقتة",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20,
-                        ),
-                      ),SizedBox(
-                      width:150,
+                    crossAxisAlignment: CrossAxisAlignment.center,children:[ Text(
+                      "قانون العقوبات رقم (111)لسنة 1969",
+                      style: TextStyle(
+                        //fontStyle: FontStyle.italic,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 20,
+                      ),
+                    ),SizedBox(
+                      width:80,
                     ), IconButton(
                       onPressed: () {  Navigator.pop(context);
                       },
@@ -39,15 +42,17 @@ class _awamerState extends State<awamer> {
             height: 10,
           ),Column(children: [
             Image.asset(
-              "imags/moikata.jpg",
+              "imags/kanonji logo1.jpg",
               height: 150,
               width: 250,
             ),ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Container(
                     width: 450,
+                    // padding: const EdgeInsets.all(50),
                     color: Colors.white10,
                     child: TextField(
+                      // obscureText: true,
                         decoration: const InputDecoration(
                           suffixIcon: Icon(
                             Icons.search,
@@ -58,48 +63,28 @@ class _awamerState extends State<awamer> {
                           border: OutlineInputBorder(),
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(color: Colors.blue),),
-                          labelText: 'ادخل رقم القرار هنا',
+                          labelText: 'ادخل رقم المادة القانونية لعرضها',
                           labelStyle: TextStyle(
                             color: Colors.black12,
                             fontSize: 18,
-                          ), focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.blue),
-                        ),  )))),SizedBox(
-              height: 10,
-            ),ClipRRect(
-                borderRadius: BorderRadius.circular(10),
-                child: Container(
 
-                    width: 450,
-                    color: Colors.white10,
-                    child: TextField(
-                        decoration: const InputDecoration(
-                          suffixIcon: Icon(
-                            Icons.search,
-                            color: Colors.blue,
-                          ),
-                          disabledBorder: InputBorder.none,
-                          errorBorder: InputBorder.none,
-                          border: OutlineInputBorder(),
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.blue),),
-                          labelText: 'ادخل سنة القرار هنا',
-                          labelStyle: TextStyle(
-                            color: Colors.black12,
-                            fontSize: 18,
+                            //fontStyle: FontStyle.italic,
                           ), focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.blue),
                         ),  )))),SizedBox(
               height: 10,
-            ),Container(
+            ),
+            Container(
+              //color: Colors.black45,
                 height: 40,
                 width:450,
                 child: ElevatedButton(
-                  child: new Text('عرض اوامر سلطة الائتلاف المؤقتة ',style:TextStyle(
+                  child: new Text('عرض المادة',style:TextStyle(
                     //fontStyle: FontStyle.italic,
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
                     fontSize: 15,
+                    //fontFamily: 'Pacifico(1)'),
                   ),),
                   // textColor: Colors.white,
                   // 2
@@ -123,14 +108,16 @@ class _awamerState extends State<awamer> {
               height: 10,
             ),
             Container(
-                height:70,
+              //color: Colors.black45,
+                height:40,
                 width:450,
                 child: ElevatedButton(
-                  child: new Text(' قراءة كل اوامر سلطة الائتلاف المؤقتة \nاو البحث عن كلمة فيها', maxLines: 2, overflow: TextOverflow.ellipsis,style:TextStyle(
+                  child: new Text(' قراءة القانون بالكامل و البحث عن كلمة فيها', maxLines: 2, overflow: TextOverflow.ellipsis,style:TextStyle(
                     //fontStyle: FontStyle.italic,
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
                     fontSize: 15,
+                    //fontFamily: 'Pacifico(1)'),
                   ),),
                   // textColor: Colors.white,
                   // 2
@@ -147,6 +134,9 @@ class _awamerState extends State<awamer> {
                   onPressed: () => {
                     setState(() {
                       _hasBeenPressed2 = !_hasBeenPressed2;
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => penalcode()));
                     })
                   },
                 )
